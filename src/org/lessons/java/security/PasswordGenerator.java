@@ -37,7 +37,9 @@ public class PasswordGenerator {
         day = input.nextInt();
         System.out.println("Il tuo giorno di nascita è: " + day);
 
-        String password = name + "-" + surname + "-" + color + "-" + year;
+        int somma = year + month + day;
+
+        String password = name + "-" + surname + "-" + color + "-" + somma;
         System.out.println("La tua password è: " + password);
 
     }
